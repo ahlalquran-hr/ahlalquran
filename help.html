@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>أهل القرآن</title>
+    <style>
+        .help{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evently;
+            align-items: center;
+        }
+        .help img{
+            width: 50%;
+            height: 200px;
+            background-color: #ddd;
+            border-radius: 13px;
+        }
+        .help div{
+            position: relative;
+            display: block;
+            left: 20%;
+            width: 60%;
+            border-radius: 15px;
+            background-color: #ddd;
+            text-align: center;
+            margin: 4px;
+        }
+        .help h1{
+            color: #000088;
+        }
+        .help input{
+            width: 68%;
+            height: 40px;
+            margin: 4px;
+            border-radius: 20px;
+            background-color: #9400D3;
+            border: 0;
+            text-align: center;
+        }
+        .help select{
+            width: 68%;
+            height: 40px;
+            background-color: #9400D3;
+            border-radius: 20px;
+            text-align: center;
+            border: 0;
+            color: #8B0000;
+            font-size: 16px;
+        }
+        .help button{
+            width: 32%;
+            background-color: #800080;
+            margin: 4px;
+            border-radius: 17px;
+            color: #0000CD;
+            font-size: 20px;
+        }
+        .help button:active{
+            background-color: #4B0082;
+        }
+        #fff{
+            font-size: 18px;
+            color: #00FFFF;
+        }
+        #bobo{
+            background-color: #00FFFF;
+            margin: 4px;
+            border-radius: 17px;
+            color: #0000CD;
+            font-size: 23px;
+            display: none;
+        }
+        #bobo:active{
+            background-color: #4B0082;
+        }
+        .correct{
+            position: absolute;
+            top: 40%;
+            width: 98%;
+            background-color: #191970;
+            border-radius: 15px;
+            margin: 4px;
+            text-align: center;
+            display: none;
+        }
+        .correct h1{
+            text-align: center;
+            color: green;
+        }
+        .correct img{
+            width: 45%;
+            height: 120px;
+            border-radius: 14px;
+        }
+        .correct button{
+            width: 55%;
+            background-color: #7B68EE;
+            border-radius: 9px;
+            border: 0;
+            font-size: 24px;
+            color: orange;
+        }
+        .correct button:active{
+            background-color: #FFF;
+        }
+        .error{
+            position: absolute;
+            top: 40%;
+            width: 98%;
+            background-color: #191970;
+            border-radius: 15px;
+            margin: 4px;
+            text-align: center;
+            display: none;
+        }
+        .correct h2{
+            text-align: center;
+            color: #ddd;
+        }
+        .error h2{
+            text-align: center;
+            color: #ddd;
+        }
+        .error h1{
+            text-align: center;
+            color: red;
+        }
+        .error img{
+            width: 45%;
+            height: 120px;
+            border-radius: 14px;
+        }
+        .error button{
+            width: 55%;
+            background-color: #7B68EE;
+            border-radius: 9px;
+            border: 0;
+            font-size: 24px;
+            color: orange;
+        }
+        .error button:active{
+            background-color: #FFF;
+        }
+    </style>
+</head>
+<body id="coco">
+    <div dir="rtl" class="head">
+        <img src="files/home.png" onclick="location.href='index.html';">
+        <img src="files/book1.png"onclick="location.href='libr.html';">
+        <img src="files/mosque.png"onclick="location.href='tala.html';">
+        <img src="files/graduation-cap.png"onclick="location.href='co.html';">
+        <img src="files/mobile-development.png"onclick="location.href='app.html';">
+        <img src="files/people.png"onclick="location.href='help.html';">
+    </div>
+    <hr>
+    <marquee>donate now easily , you can help us to improve the web</marquee>
+    
+    <div class="help">
+        <div>
+            <h1>تبرع الآن</h1>
+            <img src="files/donation.gif">
+            <form>
+                <input id="e" type="text" placeholder="اسم المتبرع">
+            </form>
+            <button id="send">إرسال</button>
+            <button id="bobo" onclick="location.href='https://www.paypal.com/ncp/payment/EEV8GV5JFDRQL';">تبرع</button>
+        </div>
+    </div>
+    <div class="error">
+        <h2>رسالة من أهل القرآن</h2>
+        <h1>خطأ</h1>
+        <img src="files/delete.png">
+        <button onclick="location.href='help.html';">تم</button>
+    </div>
+    
+    <h1 id="two">الشركاء</h1>
+    <div class="ads">
+        <marquee>
+        </marquee>
+    </div>
+    <h1 id="foor">Thank you - شكراً لكم</h1>
+    <script src="java.js"></script>
+</body>
+</html>
